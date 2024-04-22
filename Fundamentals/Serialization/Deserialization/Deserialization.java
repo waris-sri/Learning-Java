@@ -28,7 +28,7 @@ public class Deserialization {
         
         FileInputStream fileIn = new FileInputStream("D:\\Java\\Learning\\Fundamentals\\Serialization\\UserInfo.ser");
         ObjectInputStream in = new ObjectInputStream(fileIn);
-        user = (User) in.readObject(user);
+        user = (User) in.readObject();
         in.close();
         fileIn.close();
         System.out.println(user.name);
