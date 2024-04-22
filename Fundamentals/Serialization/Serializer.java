@@ -12,10 +12,10 @@
  * - write the file out to save (ObjectOutputStream)
  */
 
-package Fundamentals.Serializer;
+package Fundamentals.Serialization;
 import java.io.*;
 
-public class Serialization {
+public class Serializer {
     
     public static class User implements Serializable {
         String name;

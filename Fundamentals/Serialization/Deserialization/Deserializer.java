@@ -4,16 +4,16 @@
  */
 
 /* HOW TO DESERIALIZE (READ)
- * - decalre the same object as null (no initiation)
+ * - declare the same object as null (no initiation)
  * - must implement Serializable interface (needs import)
  * - get .ser file from path... (FileInputStream)
  * - read the file (ObjectInputStream)
-*/
+ */
 
-package Fundamentals.Serializer.Deserializer;
+package Fundamentals.Serialization.Deserialization;
 import java.io.*;
 
-public class Deserialization {
+public class Deserializer {
     
     public static class User implements Serializable {
         String name;
@@ -25,7 +25,6 @@ public class Deserialization {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         User user = null;
-        
         FileInputStream fileIn = new FileInputStream("D:\\Java\\Learning\\Fundamentals\\Serializer\\UserInfo.ser");
         ObjectInputStream in = new ObjectInputStream(fileIn);
         user = (User) in.readObject();
