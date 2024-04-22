@@ -10,11 +10,18 @@
 * - basically loading a saved file
 */
 
+/* HOW TO SERIALIZE (SAVE)
+ * - the object class must implement Serializable interface (needs import)
+ * - save .ser file as... on path... (FileOutputStream)
+ * - write the file out to save (ObjectOutputStream)
+ */
+
 package Fundamentals.Serialization;
+import java.io.*;
 
 public class Serialization {
     
-    public static class User {
+    public static class User implements Serializable {
         String name;
         String password;
         public void greet() {
@@ -22,10 +29,17 @@ public class Serialization {
         }
     }
     
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         User user = new User();
         user.name = "John";
         user.password = "12345";
         user.greet();
+
+        FileOutputStream fileOut = new FileOutputStream("D:/Java/Learning/Fundamentals/Serialization/UserInfo.ser");
+        ObjectOutputStream out = new ObjectOutputStream(fileOut);
+        out.writeObject(user);
+        out.close();
+        fileOut.close();
+        System.out.println(">> Serialized data saved as \"UserInfo.ser\"");
     }
 }
