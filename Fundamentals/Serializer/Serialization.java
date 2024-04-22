@@ -31,7 +31,7 @@ public class Serialization {
         user.password = "12345";
         user.greet();
 
-        FileOutputStream fileOut = new FileOutputStream("D:\\Java\\Learning\\Fundamentals\\Serialization\\UserInfo.ser");
+        FileOutputStream fileOut = new FileOutputStream("D:\\Java\\Learning\\Fundamentals\\Serializer\\UserInfo.ser");
         ObjectOutputStream out = new ObjectOutputStream(fileOut);
         out.writeObject(user);
         out.close();
