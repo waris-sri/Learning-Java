@@ -3,7 +3,7 @@
  * - basically loading a saved file
  */
 
-/* HOW TO SERIALIZE (SAVE)
+/* HOW TO DESERIALIZE (READ)
  * - decalre the same object as null (no initiation)
  * - must implement Serializable interface (needs import)
  * - get .ser file from path... (FileInputStream)
