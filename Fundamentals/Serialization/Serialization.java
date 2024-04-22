@@ -1,14 +1,10 @@
 /* SERIALIZATION
-* - converts an object into a byte stream (.ser) file
-*   - .ser is platform independent
-* - saves the current state of an object after the program exists
-* - the file can be saved locally, to another machine, or stored in a network
-* - basically saving a file with the object's information
-* 
-* DESERIALIZATION
-* - reversed process of serialization; converts a byte stream into an object
-* - basically loading a saved file
-*/
+ * - converts an object into a byte stream (.ser) file
+ *   - .ser is platform independent
+ * - saves (= persists) the current state of an object after the program exists
+ * - the file can be saved locally, to another machine, or stored in a network
+ * - basically saving a file with the object's information
+ */
 
 /* HOW TO SERIALIZE (SAVE)
  * - the object class must implement Serializable interface (needs import)
@@ -29,13 +25,13 @@ public class Serialization {
         }
     }
     
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
         User user = new User();
         user.name = "John";
         user.password = "12345";
         user.greet();
 
-        FileOutputStream fileOut = new FileOutputStream("D:/Java/Learning/Fundamentals/Serialization/UserInfo.ser");
+        FileOutputStream fileOut = new FileOutputStream("D:\\Java\\Learning\\Fundamentals\\Serialization\\UserInfo.ser");
         ObjectOutputStream out = new ObjectOutputStream(fileOut);
         out.writeObject(user);
         out.close();
