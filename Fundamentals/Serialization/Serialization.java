@@ -1,19 +1,20 @@
-package Fundamentals.Serialization;
 /* SERIALIZATION
- * - converts an object into a byte stream (.ser) file
- *   - .ser is platform independent
- * - saves the current state of an object after the program exists
- * - the file can be saved locally, to another machine, or stored in a network
- * - basically saving a file with the object's information
- * 
- * DESERIALIZATION
- * - reversed process of serialization; converts a byte stream into an object
- * - basically loading a saved file
- */
+* - converts an object into a byte stream (.ser) file
+*   - .ser is platform independent
+* - saves the current state of an object after the program exists
+* - the file can be saved locally, to another machine, or stored in a network
+* - basically saving a file with the object's information
+* 
+* DESERIALIZATION
+* - reversed process of serialization; converts a byte stream into an object
+* - basically loading a saved file
+*/
+
+package Fundamentals.Serialization;
 
 public class Serialization {
     
-    public class User {
+    public static class User {
         String name;
         String password;
         public void greet() {
