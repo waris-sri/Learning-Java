@@ -1,3 +1,4 @@
+package Fundamentals.Serialization;
 /* SERIALIZATION
  * - converts an object into a byte stream (.ser) file
  *   - .ser is platform independent
