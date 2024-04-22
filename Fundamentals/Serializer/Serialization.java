@@ -12,7 +12,7 @@
  * - write the file out to save (ObjectOutputStream)
  */
 
-package Fundamentals.Serialization;
+package Fundamentals.Serializer;
 import java.io.*;
 
 public class Serialization {

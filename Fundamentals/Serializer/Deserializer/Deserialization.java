@@ -10,7 +10,7 @@
  * - read the file (ObjectInputStream)
 */
 
-package Fundamentals.Serialization.Deserialization;
+package Fundamentals.Serializer.Deserializer;
 import java.io.*;
 
 public class Deserialization {
