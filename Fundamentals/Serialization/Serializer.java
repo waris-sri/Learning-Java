@@ -48,23 +48,23 @@ public class Serializer {
             user.secret = "This is a secret message";
             user.greet();
     
-            FileOutputStream fileOut = new FileOutputStream("/Users/warissripatoomrak/Documents/Learning-Java/Fundamentals/Serialization/UserInfo.ser");
+            FileOutputStream fileOut = new FileOutputStream("UserInfo.ser");
             ObjectOutputStream out = new ObjectOutputStream(fileOut);
             out.writeObject(user);
             out.close();
             fileOut.close();
-            System.out.println(">> Serialized data saved as \"UserInfo.ser\"");
+            System.out.println(">> Serialized data saved.");
         } catch (Exception e) {
             e.printStackTrace();
         }
         // Deserialize
         try {
-            FileInputStream fileIn = new FileInputStream("/Users/warissripatoomrak/Documents/Learning-Java/Fundamentals/Serialization/UserInfo.ser");
+            FileInputStream fileIn = new FileInputStream("UserInfo.ser");
             ObjectInputStream in = new ObjectInputStream(fileIn);
             User user = (User) in.readObject();
             in.close();
             fileIn.close();
-            System.out.println("\n>> Successfully deserialized \"UserInfo.ser\":");
+            System.out.println("\n>> Deserialized successfully:");
             System.out.println(user.name);
             System.out.println(user.password);
             System.out.println(user.secret); // Will output null
