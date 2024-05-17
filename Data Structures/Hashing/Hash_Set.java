@@ -11,7 +11,8 @@ public class Hash_Set {
         numbers.add(1);
         numbers.add(2);
         numbers.add(6);
-        numbers.add(8);
+        numbers.add(-8);
+        numbers.add(18);
         for (int i = 1; i <= 10; i++) {
             if (numbers.contains(i)) {
                 System.out.println(i + " exists");
