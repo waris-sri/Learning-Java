@@ -52,8 +52,6 @@ public class Comparison {
         // System.out.println("End time: " + endTimeL);
         System.out.println("Execution time: " + executionTimeL + " nanoseconds (LinkedList)");
 
-
-
         System.out.println("\nAppending Elements:");
         // get ArrayList starting time
         long startTimeA2 = System.nanoTime();
@@ -103,27 +101,44 @@ public class Comparison {
     }
 }
 
-/* Q: (Adding In-between Elements) Why was LinkedList slower than ArrayList?
+/*
+ * Q: (Adding In-between Elements) Why was LinkedList slower than ArrayList?
  * A:
-    In the provided code, the LinkedList was slower than the ArrayList because of the way these
-    data structures are implemented and how they handle operations like adding elements.
-
-    ArrayList is a dynamic array, which means it internally uses an array to store the elements.
-    When an element is added to an ArrayList, if there is not enough space in the array, it creates
-    a new array with a larger capacity, copies the elements from the old array to the new array,
-    and then adds the new element. This operation can be quite fast, especially if there is enough
-    space in the array to accommodate the new element, since it only requires shifting a few elements.
-
-    On the other hand, LinkedList is a doubly linked list, which means it consists of nodes, where
-    each node stores an element and a reference to the previous and next nodes. When an element is
-    added to a LinkedList, it creates a new node, updates the previous node's next reference, and
-    the next node's previous reference. This operation, in general, is slower than adding an
-    element to an ArrayList, especially when adding an element in the middle of the list, as it
-    requires updating multiple references.
-
-    In the provided code, adding elements in the middle of the list (using add(index, element))
-    causes the LinkedList to be slower than the ArrayList. If you were to add elements at the end
-    of the list, you might notice that the difference in execution time would be smaller or even in
-    favor of the LinkedList. However, for operations like random access, ArrayList would still be
-    faster due to its underlying array implementation.
+ * In the provided code, the LinkedList was slower than the ArrayList because of
+ * the way these
+ * data structures are implemented and how they handle operations like adding
+ * elements.
+ * 
+ * ArrayList is a dynamic array, which means it internally uses an array to
+ * store the elements.
+ * When an element is added to an ArrayList, if there is not enough space in the
+ * array, it creates
+ * a new array with a larger capacity, copies the elements from the old array to
+ * the new array,
+ * and then adds the new element. This operation can be quite fast, especially
+ * if there is enough
+ * space in the array to accommodate the new element, since it only requires
+ * shifting a few elements.
+ * 
+ * On the other hand, LinkedList is a doubly linked list, which means it
+ * consists of nodes, where
+ * each node stores an element and a reference to the previous and next nodes.
+ * When an element is
+ * added to a LinkedList, it creates a new node, updates the previous node's
+ * next reference, and
+ * the next node's previous reference. This operation, in general, is slower
+ * than adding an
+ * element to an ArrayList, especially when adding an element in the middle of
+ * the list, as it
+ * requires updating multiple references.
+ * 
+ * In the provided code, adding elements in the middle of the list (using
+ * add(index, element))
+ * causes the LinkedList to be slower than the ArrayList. If you were to add
+ * elements at the end
+ * of the list, you might notice that the difference in execution time would be
+ * smaller or even in
+ * favor of the LinkedList. However, for operations like random access,
+ * ArrayList would still be
+ * faster due to its underlying array implementation.
  */

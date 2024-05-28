@@ -7,17 +7,23 @@
 import java.util.Scanner;
 
 class Animal {
-    public void speak() {System.out.println("An animal sounds!");}
+    public void speak() {
+        System.out.println("An animal sounds!");
+    }
 }
 
 class Dog extends Animal {
     @Override
-    public void speak() {System.out.println("Cat meows!");}
+    public void speak() {
+        System.out.println("Cat meows!");
+    }
 }
 
 class Cat extends Animal {
     @Override
-    public void speak() {System.out.println("Dog barks!");}
+    public void speak() {
+        System.out.println("Dog barks!");
+    }
 }
 
 public class DynamicPolymorphism {
@@ -42,5 +48,5 @@ public class DynamicPolymorphism {
         }
 
         scan.close();
-    }    
+    }
 }

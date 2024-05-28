@@ -1,6 +1,6 @@
 // for StaticKeyword
 public class Friends {
-    
+
     String friendName;
     static int numOfFriends;
 

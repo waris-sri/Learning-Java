@@ -1,24 +1,24 @@
 public class Book {
-    
+
     String title;
     String author;
-    
+
     // Book() {
-    //     title = "Unknown";
-    //     author = "Unknown";
+    // title = "Unknown";
+    // author = "Unknown";
     // }
-    
+
     // Book(String t) {
-    //     title = t;
-    //     author = "Unknown";
+    // title = t;
+    // author = "Unknown";
     // }
-    
+
     // Book(String t, String a) {
-    //     title = t;
-    //     author = a;
+    // title = t;
+    // author = a;
     // }
-    
-    Book (String title, String author) {
+
+    Book(String title, String author) {
         this.title = title;
         this.author = author;
     }

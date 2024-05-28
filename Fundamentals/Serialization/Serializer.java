@@ -25,20 +25,22 @@
  */
 
 package Fundamentals.Serialization;
+
 import java.io.*;
 
 public class Serializer {
-    
+
     public static class User implements Serializable {
         private static final long serialVersionUID = 1L;
         String name;
         String password;
         transient String secret; // Do not serialize this
+
         public void greet() {
             System.out.println("Hello, " + this.name + "!");
         }
     }
-    
+
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         // Serialize
         try {
@@ -47,7 +49,7 @@ public class Serializer {
             user.password = "12345";
             user.secret = "This is a secret message";
             user.greet();
-    
+
             FileOutputStream fileOut = new FileOutputStream("UserInfo.ser");
             ObjectOutputStream out = new ObjectOutputStream(fileOut);
             out.writeObject(user);

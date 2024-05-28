@@ -6,7 +6,8 @@
  */
 
 interface Flyable {
-    public String fly(); // Method Signature: The type of return value and parameters are not specified. They can be any data types.
+    public String fly(); // Method Signature: The type of return value and parameters are not specified.
+                         // They can be any data types.
 }
 
 interface Swimmable {
@@ -14,7 +15,8 @@ interface Swimmable {
 }
 
 class Bird implements Flyable {
-    // `implements`: used for implementing interfaces, where a class agrees to implement the methods defined in an interface
+    // `implements`: used for implementing interfaces, where a class agrees to
+    // implement the methods defined in an interface
     public String fly() {
         return "Fly like a bird.";
     }

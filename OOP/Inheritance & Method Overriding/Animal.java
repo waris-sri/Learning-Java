@@ -6,13 +6,15 @@
 class Animal {
     String name;
     String breed;
-    
-    public Animal (String name, String breed) {
+
+    public Animal(String name, String breed) {
         this.name = name;
         this.breed = breed;
     }
 
-    public void sound() {System.out.println(name + " makes a sound.");}
+    public void sound() {
+        System.out.println(name + " makes a sound.");
+    }
 }
 
 class Cat extends Animal {
@@ -21,8 +23,13 @@ class Cat extends Animal {
         super(name, breed);
     }
 
-    public void eat() {System.out.println(name + " is eating.");}
-    public void sleep() {System.out.println(name + " is sleeping.");}
+    public void eat() {
+        System.out.println(name + " is eating.");
+    }
+
+    public void sleep() {
+        System.out.println(name + " is sleeping.");
+    }
 
     public static void main(String[] args) {
         Cat myCat = new Cat("Chokdee", "Siamese");

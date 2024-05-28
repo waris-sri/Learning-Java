@@ -6,10 +6,11 @@ import java.io.IOException;
 
 public class FileManagement {
     public static void main(String[] args) throws IOException {
-        
+
         // Using the `File` class
         File myFile = new File("Sample File.txt");
-        // File myFile = new File("/Users/apple/Desktop/Java/Learning/File Management/Sample File.txt"); // in full file path
+        // File myFile = new File("/Users/apple/Desktop/Java/Learning/File
+        // Management/Sample File.txt"); // in full file path
         if (myFile.exists()) {
             System.out.println("The file exists");
             System.out.println(myFile.getPath());
@@ -31,16 +32,17 @@ public class FileManagement {
         }
 
         // Using the `FileReader` class
-        /* FILE READER
+        /*
+         * FILE READER
          * reads the contents as a stream of characters one by one
          * the `read()` method returns an integer value, which contains the byte value
-         *   - it returns -1 when it reaches the end of the file
+         * - it returns -1 when it reaches the end of the file
          */
         try {
             FileReader reader = new FileReader("ASCII Art.txt");
             int read = reader.read();
             while (read != -1) {
-                System.out.print((char)read);
+                System.out.print((char) read);
                 read = reader.read();
             }
             reader.close();

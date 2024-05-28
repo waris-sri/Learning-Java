@@ -1,6 +1,6 @@
 import java.text.NumberFormat;
 import java.util.Scanner;
-import java.lang.Math; 
+import java.lang.Math;
 
 public class BetterMortgage {
     public static void main(String[] args) {
@@ -29,7 +29,9 @@ public class BetterMortgage {
             input = scan.nextFloat();
             if (input >= min && input <= max) {
                 break;
-            } else System.out.println("Enter a number within the range of " + min + " and " + max + ".");
-        } return input;
+            } else
+                System.out.println("Enter a number within the range of " + min + " and " + max + ".");
+        }
+        return input;
     }
 }

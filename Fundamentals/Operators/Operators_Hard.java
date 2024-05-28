@@ -2,7 +2,7 @@
 
 public class Operators_Hard {
     public static void main(String[] args) {
-        int[] binarySequence = {1, 1, 1, 0, 1, 0, 0};
+        int[] binarySequence = { 1, 1, 1, 0, 1, 0, 0 };
 
         int ANDResult = binarySequence[0];
         int ORResult = binarySequence[0];

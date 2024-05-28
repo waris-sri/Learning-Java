@@ -18,6 +18,6 @@ class Child extends Parent {
 
 public class ConstructorChain {
     public static void main(String[] args) {
-        new Child();  // prints messages from all 3 constructors in a top-down order
+        new Child(); // prints messages from all 3 constructors in a top-down order
     }
 }

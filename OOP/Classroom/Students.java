@@ -7,7 +7,7 @@ public class Students {
     String university;
     int age;
     float height;
-    
+
     Students(String name, String school, String university, int age, float height) {
         this.name = name;
         this.school = school;
@@ -15,11 +15,11 @@ public class Students {
         this.age = age;
         this.height = height;
     }
-    
+
     void learn(String name) {
         System.out.println(this.name + " is learning…");
     }
-    
+
     void rest(String name) {
         System.out.println(this.name + " is taking a rest…");
     }

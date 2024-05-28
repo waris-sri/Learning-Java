@@ -15,7 +15,8 @@ enum Planets {
     PLUTO(9);
 
     int order;
-    Planets (int order) {
+
+    Planets(int order) {
         this.order = order;
     }
 }
@@ -27,7 +28,7 @@ public class Enum {
     }
 
     static void isHabitable(Planets myPlanet) {
-        switch(myPlanet) {
+        switch (myPlanet) {
             case EARTH:
                 System.out.println("The Earth is habitable.");
                 System.out.printf("This is the planet #%d.", myPlanet.order);

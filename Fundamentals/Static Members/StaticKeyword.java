@@ -1,10 +1,13 @@
 public class StaticKeyword {
     public static void main(String[] args) {
-        
-        /* Static Properties:
-         * belongs to a class rather than an object (instance) of the class + shared by all objects of that class  
+
+        /*
+         * Static Properties:
+         * belongs to a class rather than an object (instance) of the class + shared by
+         * all objects of that class
          * links between classes instead of methods
-         * can be accessed directly by the class name without creating an object of that class (no `new`)
+         * can be accessed directly by the class name without creating an object of that
+         * class (no `new`)
          * mainly used for memory management (is memory-saving)
          */
 

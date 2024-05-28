@@ -1,3 +1,4 @@
+
 /* HASH SET:
  * implements the Set interface (needs import)
  * only has keys, no values
@@ -5,6 +6,7 @@
  *   - uses Wrapper Classes (converting primitive data type into object)
  */
 import java.util.HashSet;
+
 public class Hash_Set {
     public static void main(String[] args) {
         HashSet<Integer> numbers = new HashSet<Integer>();

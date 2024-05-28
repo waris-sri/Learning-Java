@@ -12,7 +12,8 @@ public class FizzBuzz {
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.print("Number: ");
             int num = scanner.nextInt();
-            System.out.println((num % 5 == 0) && (num % 3 == 0) ? "FizzBuzz" : num % 5 == 0 ? "Fizz" : (num % 3 == 0 ? "Buzz" : num));
+            System.out.println((num % 5 == 0) && (num % 3 == 0) ? "FizzBuzz"
+                    : num % 5 == 0 ? "Fizz" : (num % 3 == 0 ? "Buzz" : num));
         }
     }
 }

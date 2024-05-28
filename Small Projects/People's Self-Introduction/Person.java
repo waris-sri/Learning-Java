@@ -19,14 +19,14 @@ class Person {
             System.out.println("Hello! This is " + this.name + " and I'm " + this.age + " years old.");
         }
     }
-    
+
     // start using and printing the code
     public static void main(String[] args) {
-        
+
         // create a new object of type `Person` with the given arguments
         Person no1 = new Person("Japan", 18);
         Person no2 = new Person("Nay", 17);
-        
+
         // call the methods
         no1.speak();
         no2.speak();

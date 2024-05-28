@@ -12,15 +12,15 @@ public class MenuDrivenProgram {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int choice;
-        
+
         do {
             System.out.println("\n—— MENU ——");
             System.out.println("(1) Menu A");
             System.out.println("(2) Menu B");
             System.out.println("(3) Menu C");
-            
+
             choice = scan.nextInt();
-            
+
             switch (choice) {
                 case 1:
                     System.out.println("You chose Menu A");
@@ -33,8 +33,7 @@ public class MenuDrivenProgram {
                     break;
             }
         } while (choice != 3);
-        
-        
+
         scan.close();
     }
 }

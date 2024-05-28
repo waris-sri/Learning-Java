@@ -10,6 +10,7 @@
 // to update the data, e.g. add(), a new node will be added to the specified position and the references will be updated to properly connect the new node with the list; no recreating a new array unlike the ArrayList, making this very efficient.
 
 import java.util.LinkedList;
+
 public class LinkedLists {
     public static void main(String[] args) {
         // Get the starting time

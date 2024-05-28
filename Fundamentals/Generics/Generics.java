@@ -10,7 +10,7 @@ public class Generics {
     public static void main(String[] args) {
         Printer<String> print = new Printer<>("This is a string!");
         print.print();
-        
+
         Printer<Integer> printInteger = new Printer<>(12345);
         printInteger.print();
 
@@ -20,7 +20,7 @@ public class Generics {
 
         Shout shout = new Shout();
         shout.shout("Ahhhhh", 4649);
-        
+
         Lists lists = new Lists();
         List<String> stringList = new ArrayList<>();
         stringList.add("Hello");
@@ -28,7 +28,7 @@ public class Generics {
         List<Integer> integerList = new ArrayList<>();
         integerList.add(54321);
         lists.printList(integerList);
-        
+
         List<Cat> catList = new ArrayList<>();
         catList.add(new Cat("Whiskers", 3, "Domestic Shorthair"));
         lists.printListAnimal(catList);
@@ -36,12 +36,14 @@ public class Generics {
 }
 
 // GENERIC CLASSES
-//             a type parameter (could be anything)
-class Printer <T> {
+// a type parameter (could be anything)
+class Printer<T> {
     T message;
+
     public Printer(T message) {
         this.message = message;
     }
+
     public void print() {
         System.out.println(message.toString());
     }
@@ -50,6 +52,7 @@ class Printer <T> {
 class Animal {
     String animalName;
     int age;
+
     public void animalInfo(String animalName, int age) {
         this.animalName = animalName;
         this.age = age;
@@ -57,14 +60,16 @@ class Animal {
 }
 
 // generics with inheritance is called "bounded generics"
-class AnimalPrinter <U, V extends Animal> {
+class AnimalPrinter<U, V extends Animal> {
     U name;
     V animal;
+
     public AnimalPrinter(U name, V animal) {
         this.name = name;
         this.animal = animal;
-        this.animal.animalInfo((String)name, 3);
+        this.animal.animalInfo((String) name, 3);
     }
+
     public void print() {
         System.out.println("Name: " + name + ", Age: " + animal.age);
     }
@@ -83,6 +88,7 @@ class Lists {
             System.out.println(obj.toString());
         }
     }
+
     public void printListAnimal(List<? extends Animal> myList) {
         for (Animal obj : myList) {
             if (obj instanceof Cat) {

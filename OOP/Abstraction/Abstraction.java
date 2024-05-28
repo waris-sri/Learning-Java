@@ -9,7 +9,10 @@ abstract class Vehicle {
 }
 
 class Car extends Vehicle {
-    @Override public void run() { System.out.println("The car is up and running."); };
+    @Override
+    public void run() {
+        System.out.println("The car is up and running.");
+    };
 }
 
 public class Abstraction {

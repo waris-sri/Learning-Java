@@ -3,7 +3,7 @@
 import java.util.Random;
 
 public class DiceRoller {
-    
+
     Random random;
     int number;
 

@@ -1,13 +1,14 @@
 import java.text.NumberFormat;
 import java.util.Scanner;
 import java.lang.Math;
+
 public class Mortgage {
     public static void main(String[] args) {
         try (Scanner scan = new Scanner(System.in)) {
             // Prompt for principal (THB) and check the requirements
-                // declare the var outside the loop to use it globally
+            // declare the var outside the loop to use it globally
             float principal;
-                // use an infinite loop to keep asking the user to finally enter the valid value
+            // use an infinite loop to keep asking the user to finally enter the valid value
             while (true) {
                 System.out.print("Principal (฿1000~1,000,000): ");
                 principal = scan.nextFloat();
@@ -15,7 +16,8 @@ public class Mortgage {
                 if (principal >= 1000 && principal <= 1000000)
                     break;
                 // otherwise, print a message
-                else System.out.println("Enter a number within the range of 1,000 and 1,000,000.");
+                else
+                    System.out.println("Enter a number within the range of 1,000 and 1,000,000.");
             }
             // Prompt for annual interest rate and check the requirements
             float rate;
@@ -24,7 +26,8 @@ public class Mortgage {
                 rate = scan.nextFloat();
                 if (rate > 0 && rate <= 30)
                     break;
-                else System.out.println("Enter a value greater than 0 and less than or equal to 30.");
+                else
+                    System.out.println("Enter a value greater than 0 and less than or equal to 30.");
             }
             // Convert to monthly rate
             float monthlyRate = (rate / 100) / 12;
@@ -35,7 +38,8 @@ public class Mortgage {
                 year = scan.nextByte();
                 if (year >= 1 && year <= 30)
                     break;
-                else System.out.println("Enter a number within the range of 1 and 30.");
+                else
+                    System.out.println("Enter a number within the range of 1 and 30.");
             }
             // Convert to months
             final byte months = (byte) (year * 12);

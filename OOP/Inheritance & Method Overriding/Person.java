@@ -3,14 +3,33 @@
 */
 
 // use interfaces to prepare empty methods for later implementation in child classes by method overriding them
-interface Employee { void getEmployeeDetails(); }
-interface Address { void getAddressDetails(); }
-interface Salary { void getSalaryDetails(); }
+interface Employee {
+    void getEmployeeDetails();
+}
+
+interface Address {
+    void getAddressDetails();
+}
+
+interface Salary {
+    void getSalaryDetails();
+}
 
 class employeeContacts implements Employee, Address, Salary {
-    @Override public void getSalaryDetails() { System.out.println("[Employee's salary details]"); }
-    @Override public void getAddressDetails() { System.out.println("[Employee's address details]"); }
-    @Override public void getEmployeeDetails() { System.out.println("[Employee's general details]"); }
+    @Override
+    public void getSalaryDetails() {
+        System.out.println("[Employee's salary details]");
+    }
+
+    @Override
+    public void getAddressDetails() {
+        System.out.println("[Employee's address details]");
+    }
+
+    @Override
+    public void getEmployeeDetails() {
+        System.out.println("[Employee's general details]");
+    }
 }
 
 public class Person {

@@ -8,8 +8,8 @@ public class Control_Hard {
         try (Scanner scan = new Scanner(System.in)) {
             System.out.print("Enter your grade: ");
             double grade = scan.nextDouble();
-            
-            // Using If Else If Ladder to classify the grade 
+
+            // Using If Else If Ladder to classify the grade
             if (grade >= 97 && grade <= 100) {
                 System.out.println("A+");
             } else if (grade >= 93 && grade <= 96) {

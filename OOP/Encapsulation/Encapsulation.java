@@ -8,7 +8,7 @@ class Citizen {
     private String name;
     private int age;
     private String nationality;
-    
+
     Citizen(String name, int age, String nationality) {
         this.setName(name);
         this.setAge(age);
@@ -16,23 +16,39 @@ class Citizen {
     }
 
     // getters - to retrieve an attribute
-    public String getName() { return name; }
-    public int getAge() { return age; }
-    public String getNationality() { return nationality; }
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getNationality() {
+        return nationality;
+    }
 
     // setters - to set/change attributes
-    public void setName(String name) { this.name = name; }
-    public void setAge(int age) { this.age = age; }
-    public void setNationality(String nationality) { this.nationality = nationality; }
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setNationality(String nationality) {
+        this.nationality = nationality;
+    }
 }
- 
+
 public class Encapsulation {
     public static void main(String[] args) {
         Citizen citizen = new Citizen("Japan", 18, "Thai");
         System.out.println("Name: " + citizen.getName());
         System.out.println("Age: " + citizen.getAge());
         System.out.println("Nationality: " + citizen.getNationality());
-        
+
         citizen.setName("John Doe");
         citizen.setAge(38);
         citizen.setNationality("American");

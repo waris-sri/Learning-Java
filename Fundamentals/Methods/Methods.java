@@ -11,7 +11,8 @@ public class Methods {
             hello(name, age);
         }
     }
-                      // the parameters don't have to match
+
+    // the parameters don't have to match
     static void hello(String name, int age) {
         System.out.println("Hello, " + name);
         System.out.println("You're " + age + " years old.");

@@ -1,3 +1,4 @@
+
 /* HASH MAP:
  * implements the Map interface (needs import)
  * similar to ArrayList<>, but has key–value pairs instead of index numbers in arrays
@@ -7,9 +8,10 @@
  * e.g. (name, email), (username, userID), (capital, country)
  */
 import java.util.HashMap;
+
 public class Hash_Map {
     public static void main(String[] args) {
-        //      key     value
+        // key value
         HashMap<String, String> countries = new HashMap<String, String>();
         // Java will only pick 1 entry when there are duplicates (unique entries only)
         countries.put("Thailand", "Bangkok");

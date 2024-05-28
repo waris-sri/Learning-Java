@@ -1,8 +1,10 @@
+
 /* HASH TABLES (Data Structure Concept)
  * a data structures used by HashMap and HashSet
  * collection of data values that are each assigned a unique key
  */
 import java.util.Hashtable;
+
 public class HashTables {
     public static void main(String[] args) {
         // key as integer
@@ -15,7 +17,8 @@ public class HashTables {
         table1.put(444, "E");
         table1.put(404, "F");
         for (Integer key : table1.keySet()) {
-            System.out.println("Hash: " + key.hashCode() + "\tIndex: " + key.hashCode()%4 + "\tKey: " + key + "\tValue: " + table1.get(key));
+            System.out.println("Hash: " + key.hashCode() + "\tIndex: " + key.hashCode() % 4 + "\tKey: " + key
+                    + "\tValue: " + table1.get(key));
         }
         // key as string
         System.out.println("\nKEY AS STRING");
@@ -27,7 +30,8 @@ public class HashTables {
         table2.put("444", "E");
         table2.put("404", "F");
         for (String key : table2.keySet()) {
-            System.out.println("Hash: " + key.hashCode() + "\tIndex: " + key.hashCode()%4 + "\tKey: " + key + "\tValue: " + table2.get(key));
+            System.out.println("Hash: " + key.hashCode() + "\tIndex: " + key.hashCode() % 4 + "\tKey: " + key
+                    + "\tValue: " + table2.get(key));
         }
     }
 }

@@ -2,6 +2,7 @@
 multiplication, and division grounded on user preference using switch statements. */
 
 import java.util.Scanner;
+
 public class Control_EasyBetter {
     public static void main(String[] args) {
         try (Scanner scan = new Scanner(System.in)) {
@@ -16,11 +17,11 @@ public class Control_EasyBetter {
             for (int i = 0; i < tokens.length; i++) {
                 individualNumbers[i] = Double.parseDouble(tokens[i]);
             }
-            
+
             // ask for the desired operation
             System.out.print("Select an operation (+, -, x, /): ");
             char operation = scan.next().charAt(0);
-            
+
             // prepare the variables to store the results, starting from index 0
             double AddResult = individualNumbers[0];
             double SubtractResult = individualNumbers[0];

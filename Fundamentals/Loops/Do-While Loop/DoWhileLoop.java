@@ -1,7 +1,10 @@
 import java.util.Scanner;
 
 public class DoWhileLoop {
-    /* Do-While Loop: checks condition last, will be executed *at least once* even if the condition is false */
+    /*
+     * Do-While Loop: checks condition last, will be executed *at least once* even
+     * if the condition is false
+     */
     public static void main(String[] args) {
         do {
             try (Scanner scan = new Scanner(System.in)) {

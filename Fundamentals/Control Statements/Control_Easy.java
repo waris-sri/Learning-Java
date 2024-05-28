@@ -1,6 +1,8 @@
+
 /* Craft a basic calculator that can execute operations like addition, subtraction,
 multiplication, and division grounded on user preference using switch statements. */
 import java.util.Scanner;
+
 public class Control_Easy {
     public static void main(String[] args) {
         try (Scanner scan = new Scanner(System.in)) {
@@ -9,11 +11,11 @@ public class Control_Easy {
             double num1 = scan.nextDouble();
             System.out.print("Enter the second number >> ");
             double num2 = scan.nextDouble();
-            
+
             // prompt for an operation
             System.out.print("Select an operation (+, -, x, /) >> ");
             char operation = scan.next().charAt(0); // only take in the first character of the string
-            
+
             // use `switch` statements to handle the calculations
             switch (operation) {
                 case '+':
