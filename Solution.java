@@ -38,12 +38,13 @@ class Solution {
             charFreq.append(charList); // ex. "better" = "1b2e2t1r" (as HashMap key)
             charIndexInWord++;
         }
-        
+
         return charFreq.toString();
     }
 
     public static void main(String[] args) {
-        String[] strs = {"eat","tea","tan","ate","nat","bat"};
+        String[] strs = { "yap", "pay", "apt", "tap", "pat", "eat", "ate", "tea", "bat", "route", "outer", "area",
+                "kin", "ink", "start", "tarts" };
         System.out.println(groupAnagrams(strs));
     }
 }
